@@ -14,7 +14,7 @@ const connect = function() {
     console.log("Successfully connected to game server");
     conn.write('Name: MSN');
     
-   /*  setInterval(() => {
+    /*  setInterval(() => {
       conn.write('Move: up');
     },100);
 
@@ -28,8 +28,9 @@ const connect = function() {
       console.log('Server Says: ', data);
     });
 
-    return conn;
+    
   });
+  return conn;
 };
 module.exports = { connect
 };
